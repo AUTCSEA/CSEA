@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 
 const nav = () => {
   return (
-    <nav class='w-full flex items-center justify-between px-10 bg-orange-500 text-white '>
+    <nav class='w-full flex items-center justify-between sm:px-32 px-10 py-2 bg-orange-500 text-white '>
       <p class='text-white font-bold text-4xl sm:text-5xl '>csea</p>
       <GiHamburgerMenu class='sm:hidden text-2xl' />
       <div class='hidden sm:flex flex-row'>
