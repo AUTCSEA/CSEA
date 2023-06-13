@@ -78,19 +78,25 @@ const Home = () => {
         <h1 class='text-3xl'>Our Sponsors</h1>
         <p>We are proud to share out sponsors for 2023</p>
 
-        <span class='bg-gradient-to-r from-yellow-400 via-amber-200 to-yellow-400 bg-clip-text text-transparent text-9xl font-bold'>
+        {/* Gold sponsors */}
+        <span class='bg-gradient-to-r from-yellow-400 via-amber-200 to-yellow-400 bg-clip-text text-transparent text-6xl font-bold mt-20'>
           GOLD
         </span>
-        <div class='flex flex-row items-center justify-evenly '>
-          <Image src={ezyvetLogo} alt='ey logo' class='w-1/2 ' />
-          <Image src={eyLogo} alt='ey logo' class='w-1/5 mb-20 ' />
+        <div class='flex flex-row items-center justify-evenly mt-5'>
+          <Image src={ezyvetLogo} alt='ey logo' class='w-3/12 ' />
+          <Image src={eyLogo} alt='ey logo' class='w-1/12 pb-20 ' />
         </div>
 
         <hr class='h-px my-8 bg-gray-200 border-0 dark:bg-gray-700' />
-        <span class='bg-gradient-to-r from-slate-400 via-zinc-200 to-slate-400 bg-clip-text text-transparent text-9xl font-bold'>
+
+        {/* Silver Sponsors */}
+        <span class='bg-gradient-to-r from-slate-400 via-zinc-200 to-slate-400 bg-clip-text text-transparent text-6xl font-bold'>
           Silver
         </span>
-        <Image src={atlassianLogo} alt='ey logo' class='w-1/3 ' />
+            <div class='flex flex-row items-center justify-evenly mt-10'>
+
+        <Image src={atlassianLogo} alt='ey logo' class='w-3/12 ' />
+            </div>
       </section>
     </>
   );
