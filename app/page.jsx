@@ -87,41 +87,42 @@ const Home = () => {
       {/* Become a member */}
       {/* bg-cover bg-no-repeat bg-[url('/bg-main.jpg')] bg-opacity-50 w-full h-96 */}
 
-      <section class="py-20 sm:px-44 flex flex-col items-center sm:inline-block bg-[url('/2bg-main.png')] bg-contain w-full h-96">
+      <section class="py-20 sm:px-44 flex flex-col items-center sm:inline-block bg-[url('/2bg-main.png')] bg-cover w-full h-96">
         <h1 class='text-3xl'>Become a member</h1>
         <p class='mt-5'>
           Youll get notified about our latest events and workshops
         </p>
+        
         <button class='py-2 px-10 mt-10 border-4 border-orange-500  text-orange-500 font-bold rounded-md hover:bg-orange-500 hover:text-white ease-in-out transition-all duration-300'>
           Join Us
         </button>
       </section>
       {/* Sponsors */}
-      <section class='py-20 sm:px-20 bg-slate-200 flex flex-col items-center'>
-        <h1 class='text-3xl'>Our Sponsors</h1>
-        <p class='mt-10'>We are proud to share out sponsors for 2023</p>
+      <section class='py-20 sm:px-20 bg-slate-200 flex flex-col '>
+        <h1 class='text-3xl self-center'>Our Sponsors</h1>
+        <p class='mt-10 self-center'>We are proud to share out sponsors for 2023</p>
 
         {/* Gold sponsors */}
-        <span class='bg-gradient-to-r from-yellow-400 via-amber-200 to-yellow-400 bg-clip-text text-transparent text-6xl font-bold mt-20'>
+        <span class='bg-gradient-to-r from-yellow-400 via-amber-400 to-yellow-400 bg-clip-text text-transparent text-6xl font-bold mt-20 self-center'>
           GOLD
         </span>
-        <div class='flex flex-row items-center justify-evenly mt-5'>
-          <Image src={ezyvetLogo} alt='ezyVet' class='sm:w-3/12 w-1/2 ' />
+        <div class='flex flex-row items-center justify-center mt-10'>
           <Image
             src={eyLogo}
             alt='EY'
-            class='sm:w-1/12 w-3/12 pb-5 sm:pb-20 '
+            class='sm:h-40 h-10 w-auto  '
           />
+          <Image src={ezyvetLogo} alt='ezyVet' class='sm:w-2/12 w-1/2' />
         </div>
 
-        <hr class='h-px my-8 bg-gray-200 border-0 dark:bg-gray-700' />
+        <hr class='h-px my-20 bg-black border-0 dark:bg-gray-700 block' />
 
         {/* Silver Sponsors */}
-        <span class='bg-gradient-to-r from-slate-400 via-zinc-200 to-slate-400 bg-clip-text text-transparent text-6xl font-bold'>
+        <span class='bg-gradient-to-r from-slate-400 via-zinc-200 to-slate-400 bg-clip-text text-transparent text-6xl font-bold self-center'>
           Silver
         </span>
         <div class='flex flex-row items-center justify-evenly mt-10'>
-          <Image src={atlassianLogo} alt='Atlassian' class='sm:w-3/12 w-1/2 ' />
+          <Image src={atlassianLogo} alt='Atlassian' class='sm:w-2/12 w-1/2 ' />
         </div>
       </section>
     </>
