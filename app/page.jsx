@@ -1,15 +1,14 @@
 'use client';
 
 import '@styles/globals.css';
-
+import { useEffect } from 'react';
+import { useState } from 'react';
+import Image from 'next/image';
+import AboutCard from '@components/AboutCard';
+import Socials from '@components/Socials';
 import eyLogo from '@public/ey.png';
 import ezyvetLogo from '@public/ezyvet.png';
 import atlassianLogo from '@public/atlassian.png';
-import Image from 'next/image';
-import { useEffect } from 'react';
-import { useState } from 'react';
-import AboutCard from '@components/AboutCard';
-import Socials from '@components/Socials';
 
 const Home = () => {
   const [about, setAbout] = useState([]);
@@ -27,7 +26,7 @@ const Home = () => {
   return (
     <>
       {/* Hero */}
-      <section class='w-full pt-10 pb-20 bg-gradient-to-r from-orange-500 to-yellow-500 h-fit flex-center flex-col'>
+      <section class='w-full pt-10 pb-20 bg-gradient-to-r from-orange-500 to-yellow-500 h-fit flex-center flex-col mouse-cursor-gradient-tracking'>
         <h2 class='text-3xl font-bold text-white opacity-70 leading-none'>
           {'</>'}
         </h2>
@@ -36,12 +35,12 @@ const Home = () => {
         <button
           onClick='https://docs.google.com/forms/d/e/1FAIpQLSfhGBQs5BR2TInjItgSwcfjcl_UQX1kQbVObsxaPWDdZ81c3w/viewform'
           target='_blank'
-          class='py-2 px-10 my-10 bg-orange-500 text-white rounded-md '
+          class='py-2 px-10 my-10 bg-orange-500 text-white rounded-md hover:bg-white hover:text-orange-500 ease-in-out transition-all duration-300'
         >
           Join CSEA
         </button>
 
-        <Socials/>
+        <Socials />
       </section>
 
       {/* What we do */}
@@ -52,7 +51,7 @@ const Home = () => {
           education nare welcome!
         </p>
         {/* Card container */}
-        <div class=' w-screen flex flex-col items-center mt-10 sm:flex-row sm:flex-wrap sm:justify-between px-5 sm:px-44 '>
+        <div class=' w-screen flex flex-col items-center mt-10 sm:flex-row sm:flex-wrap sm:justify-between px-5 sm:px-44 md:px-20 '>
           {about != null &&
             about.map((item) => (
               <AboutCard
@@ -88,12 +87,12 @@ const Home = () => {
       {/* Become a member */}
       {/* bg-cover bg-no-repeat bg-[url('/bg-main.jpg')] bg-opacity-50 w-full h-96 */}
 
-      <section class="py-20 sm:px-44 flex flex-col items-center sm:inline-block bg-[url('/1bg-main.jpg')] bg-cover w-full)">
+      <section class="py-20 sm:px-44 flex flex-col items-center sm:inline-block bg-[url('/2bg-main.png')] bg-contain w-full h-96">
         <h1 class='text-3xl'>Become a member</h1>
         <p class='mt-5'>
           Youll get notified about our latest events and workshops
         </p>
-        <button class='py-2 px-10 mt-10 border-4 border-orange-500 bg-white text-orange-500 font-bold rounded-md'>
+        <button class='py-2 px-10 mt-10 border-4 border-orange-500  text-orange-500 font-bold rounded-md hover:bg-orange-500 hover:text-white ease-in-out transition-all duration-300'>
           Join Us
         </button>
       </section>
