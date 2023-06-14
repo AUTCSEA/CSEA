@@ -1,13 +1,11 @@
 'use client';
 
 import '@styles/globals.css';
-import { AiOutlineInstagram } from 'react-icons/ai';
-import { AiFillLinkedin } from 'react-icons/ai';
-import { AiFillFacebook } from 'react-icons/ai';
-import { FaBrain } from 'react-icons/fa';
-import { AiOutlineCalendar } from 'react-icons/ai';
-import { BsPeople } from 'react-icons/bs';
-import * as Icons from 'react-icons/io';
+import {
+  IoLogoInstagram,
+  IoLogoLinkedin,
+  IoLogoFacebook,
+} from 'react-icons/io';
 import eyLogo from '@public/ey.png';
 import ezyvetLogo from '@public/ezyvet.png';
 import atlassianLogo from '@public/atlassian.png';
@@ -15,7 +13,7 @@ import Image from 'next/image';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import AboutCard from '@components/AboutCard';
-import React from 'react';
+
 const Home = () => {
   const [about, setAbout] = useState([]);
 
@@ -28,6 +26,7 @@ const Home = () => {
     };
     getAbout();
   }, []);
+
 
   return (
     <>
@@ -43,9 +42,9 @@ const Home = () => {
         </button>
 
         <div class='w-40 mt-10 flex text-white text-5xl justify-between'>
-          <AiOutlineInstagram />
-          <AiFillLinkedin />
-          <AiFillFacebook />
+          <IoLogoInstagram />
+          <IoLogoLinkedin />
+          <IoLogoFacebook />
         </div>
       </section>
 
@@ -63,7 +62,7 @@ const Home = () => {
             <AboutCard
               title={item.title}
               subtitle={item.description}
-              icon={Icons[item.icon]}
+              icon={item.image}
               key={item._id}
             />
           ))}
