@@ -1,11 +1,7 @@
 'use client';
 
 import '@styles/globals.css';
-import {
-  IoLogoInstagram,
-  IoLogoLinkedin,
-  IoLogoFacebook,
-} from 'react-icons/io';
+
 import eyLogo from '@public/ey.png';
 import ezyvetLogo from '@public/ezyvet.png';
 import atlassianLogo from '@public/atlassian.png';
@@ -13,6 +9,7 @@ import Image from 'next/image';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import AboutCard from '@components/AboutCard';
+import Socials from '@components/Socials';
 
 const Home = () => {
   const [about, setAbout] = useState([]);
@@ -27,7 +24,6 @@ const Home = () => {
     getAbout();
   }, []);
 
-
   return (
     <>
       {/* Hero */}
@@ -37,15 +33,15 @@ const Home = () => {
         </h2>
         <h1 class='text-9xl text-white font-bold leading-none'>csea</h1>
         <p class=' text-white'>Computer Science & Engineering Association</p>
-        <button class='py-2 px-10 mt-7 bg-orange-500 text-white rounded-md '>
+        <button
+          onClick='https://docs.google.com/forms/d/e/1FAIpQLSfhGBQs5BR2TInjItgSwcfjcl_UQX1kQbVObsxaPWDdZ81c3w/viewform'
+          target='_blank'
+          class='py-2 px-10 my-10 bg-orange-500 text-white rounded-md '
+        >
           Join CSEA
         </button>
 
-        <div class='w-40 mt-10 flex text-white text-5xl justify-between'>
-          <IoLogoInstagram />
-          <IoLogoLinkedin />
-          <IoLogoFacebook />
-        </div>
+        <Socials/>
       </section>
 
       {/* What we do */}
@@ -55,17 +51,17 @@ const Home = () => {
           We are a student run club for AUT but any students from other
           education nare welcome!
         </p>
-        {/* https://codesandbox.io/s/dynamiciconload-react-icons-6imgv?file=/src/DynamicIcon.tsx */}
         {/* Card container */}
         <div class=' w-screen flex flex-col items-center mt-10 sm:flex-row sm:flex-wrap sm:justify-between px-5 sm:px-44 '>
-          {about.map((item) => (
-            <AboutCard
-              title={item.title}
-              subtitle={item.description}
-              icon={item.image}
-              key={item._id}
-            />
-          ))}
+          {about != null &&
+            about.map((item) => (
+              <AboutCard
+                title={item.title}
+                subtitle={item.description}
+                icon={item.image}
+                key={item._id}
+              />
+            ))}
           {/* <AboutCard
             title={'Host Events'}
             subtitle={
