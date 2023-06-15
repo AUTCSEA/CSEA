@@ -31,7 +31,9 @@ const Home = () => {
           {'</>'}
         </h2>
         <h1 class='text-9xl text-white font-bold leading-none'>csea</h1>
-        <p class=' text-white flex text-center'>Computer Science & Engineering Association</p>
+        <p class=' text-white flex text-center'>
+          Computer Science & Engineering Association
+        </p>
         <button
           onClick='https://docs.google.com/forms/d/e/1FAIpQLSfhGBQs5BR2TInjItgSwcfjcl_UQX1kQbVObsxaPWDdZ81c3w/viewform'
           target='_blank'
@@ -39,9 +41,8 @@ const Home = () => {
         >
           Join CSEA
         </button>
-        <Socials size='6xl' width='44'/>
+        <Socials size='6xl' width='44' />
       </section>
-
 
       {/* What we do */}
       <section class='w-full py-20 flex flex-col flex-center bg-slate-200'>
@@ -52,7 +53,7 @@ const Home = () => {
         </p>
 
         {/* Card container */}
-        <div class=' w-screen flex flex-col items-center mt-10 sm:flex-row sm:flex-wrap sm:justify-between px-5 sm:px-44 md:px-20 '>
+        <div class=' w-screen flex flex-col items-center mt-10 sm:flex-row sm:flex-wrap sm:justify-between px-5 sm:px-10 md:px-54 lg:px-40 '>
           {about != null &&
             about.map((item) => (
               <AboutCard
@@ -65,7 +66,6 @@ const Home = () => {
         </div>
       </section>
 
-
       {/* Become a member */}
       <section class="py-20 sm:px-44 flex flex-col items-center sm:inline-block bg-[url('/2bg-main.png')] bg-cover w-full h-96">
         <h1 class='text-3xl '>Become a member</h1>
@@ -76,7 +76,6 @@ const Home = () => {
           Join Us
         </button>
       </section>
-
 
       {/* Sponsors */}
       <section class='pt-20 pb-44 sm:px-20 bg-slate-200 flex flex-col '>
