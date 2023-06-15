@@ -39,7 +39,7 @@ const Home = () => {
         >
           Join CSEA
         </button>
-        <Socials />
+        <Socials size='6xl' width='44'/>
       </section>
 
 
