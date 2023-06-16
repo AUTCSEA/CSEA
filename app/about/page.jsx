@@ -8,7 +8,7 @@ const About = () => {
   return (
     <>
       {/* Header Image */}
-      <section class="bg-[url('/images/backgrounds/1bg-main.jpg')] bg-cover bg-no-repeat w-full h-96 relative">
+      <section class=" w-full h-96 relative">
         <div class='absolute bg-orange-500 opacity-60 w-full h-full'></div>
       </section>
 
