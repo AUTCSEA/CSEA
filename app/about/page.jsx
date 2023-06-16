@@ -1,3 +1,4 @@
+import '@styles/globals.css';
 import ProfileCard from '@components/ProfileCard';
 import { use } from 'react';
 import { getExecs } from '@utils/getExecs';
@@ -21,6 +22,7 @@ const About = () => {
               position={exec.position}
               linkedinURL={exec.linkedinURL}
               image={exec.imageURL}
+              placeholder='blur'
               key={exec._id}
             />
           ))}
