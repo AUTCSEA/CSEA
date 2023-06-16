@@ -1,24 +1,13 @@
-'use client';
 import ProfileCard from '@components/ProfileCard';
-import globals from '@styles/globals.css';
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { use } from 'react';
+import { getExecs } from '@utils/getExecs';
 const About = () => {
-  const [execs, setExecs] = useState([]);
+  const execs = use(getExecs());
 
-  useEffect(() => {
-    const getExecs = async () => {
-      const response = await fetch('/api/execs');
-      const data = await response.json();
-      setExecs(data);
-      console.log(data);
-    };
-    getExecs();
-  }, []);
   return (
     <>
-      {/* Carrousel */}
-      <section class="bg-[url('/1bg-main.jpg')] bg-cover bg-no-repeat w-full h-96 relative">
+      {/* Header Image */}
+      <section class="bg-[url('/images/backgrounds/1bg-main.jpg')] bg-cover bg-no-repeat w-full h-96 relative">
         <div class='absolute bg-orange-500 opacity-60 w-full h-full'></div>
       </section>
 
