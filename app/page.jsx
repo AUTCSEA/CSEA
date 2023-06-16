@@ -27,10 +27,8 @@ const Home = () => {
     <>
       {/* Hero */}
       <section class='w-full pt-10 pb-20 bg-gradient-to-r from-orange-500 to-yellow-500 h-fit flex-center flex-col mouse-cursor-gradient-tracking'>
-        <h2 class='text-3xl font-bold text-white opacity-70 leading-none'>
-          {'</>'}
-        </h2>
-        <h1 class='text-9xl text-white font-bold leading-none'>csea</h1>
+        <h2 class='text-3xl font-bold text-white opacity-70'>{'</>'}</h2>
+        <h1 class='text-9xl text-white font-bold'>csea</h1>
         <p class=' text-white flex text-center'>
           Computer Science & Engineering Association
         </p>
