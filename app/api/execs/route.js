@@ -13,6 +13,5 @@ export const GET = async (req, res) => {
     console.log('Error getting about: ', error);
 
     return new Response('Error getting execs', { status: 500 });
-    // res.status(500).json({ 'Failed to get about': error });
   }
 };

@@ -5,7 +5,7 @@ const AboutCard = ({ icon, title, subtitle }) => {
   const Icon = ReactIcons[icon];
   return (
     <div className='max-w-xs h-96 p-10 mt-5 flex flex-col justify-between bg-orange-500 text-white rounded-xl'>
-      <Icon class='text-9xl self-center'/>
+      <Icon class='text-9xl self-center' />
       <h1 class='text-2xl font-bold'>{title}</h1>
       <p>{subtitle}</p>
     </div>
