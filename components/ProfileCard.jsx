@@ -9,7 +9,7 @@ const ProfileCard = ({ name, position, linkedinURL, image }) => {
         fill={true}
         // height={208}
         // width={160}
-        src={`https://res.cloudinary.com/dlguyvrg5/image/upload${image}`}
+        src={`https://res.cloudinary.com/${process.env.CLOUDINARY_ID}/image/upload${image}`}
         sizes='50vw'
         alt={name}
       ></Image>
