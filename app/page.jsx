@@ -43,7 +43,7 @@ const Home = () => {
         <div class=' w-screen flex flex-col items-center mt-10 sm:flex-row sm:flex-wrap sm:justify-between px-5 sm:px-10 md:px-54 lg:px-40 '>
           <AboutCard
             title='Host Events'
-            subtitle='We regularly host events like hackathonds, workshops, and expert
+            subtitle='We regularly host events like hackathons, workshops, and expert
              panels with the help from our sponsors. We also host social events like pub quizzes.'
             icon='IoMdCalendar'
           />
@@ -67,7 +67,7 @@ const Home = () => {
       </section>
 
       {/* Become a member */}
-      <section class="py-20 sm:px-44 flex flex-col items-center sm:items-start bg-[url('/2bg-main.png')] bg-cover w-full h-96">
+      <section class="py-20 sm:px-44 flex flex-col items-center sm:items-start bg-[url('/images/backgrounds/2bg-main.png')] bg-cover w-full h-96">
         <h1 class='text-3xl '>Become a member</h1>
         <p class='mt-5 text-center sm:text-left'>
           Become a member to get notified about our latest events and workshops,
@@ -93,7 +93,7 @@ const Home = () => {
         <span class='bg-gradient-to-r from-yellow-400 via-amber-400 to-yellow-400 bg-clip-text text-transparent text-6xl font-bold mt-20 self-center'>
           GOLD
         </span>
-        <div class='flex flex-row items-center justify-center mt-10'>
+        <div class='flex flex-row items-center justify-center mt-24'>
           <Image src={eyLogo} alt='EY' class='sm:h-40 h-10 w-auto  ' />
           <Image src={ezyvetLogo} alt='ezyVet' class='sm:w-2/12 w-1/2' />
         </div>

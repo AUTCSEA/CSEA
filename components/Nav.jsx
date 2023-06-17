@@ -37,7 +37,7 @@ const Nav = () => {
       {/* Mobile menu */}
       {isOpen && (
         <div class='flex flex-col justify-center  h-screen w-screen top-0 z-10 bg-white fixed text-3xl'>
-          <IoIosClose onClick={(e) => handleClick(e)} class='absolute right-5 top-5 text-5xl'/>
+          <IoIosClose onClick={(e) => handleClick(e)} class='absolute right-5 top-5'/>
           <div class=' text-center h-32 flex self-center '>
             <ul>
               <li>
