@@ -5,7 +5,7 @@ import CookieBanner from '@components/CookieBanner';
 
 
 export const metadata = {
-  title: 'CSEA',
+  title: 'CSEA | Home',
   description:
     'Auckland University of Technology Computer Science and Engineering Association',
 };

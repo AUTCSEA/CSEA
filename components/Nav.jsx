@@ -31,6 +31,11 @@ const Nav = () => {
                 About Us
               </Link>
             </li>
+            <li>
+              <a href='https://csea-careerportal.prosple.com/' class='pr-5'>
+                Internship Portal
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -49,6 +54,11 @@ const Nav = () => {
                 <Link href='/about' onClick={(e) => handleClick(e)}>
                   About Us
                 </Link>
+              </li>
+              <li class='mt-10'>
+                <a href='https://csea-careerportal.prosple.com/' onClick={(e) => handleClick(e)}>
+                  Internship Portal
+                </a>
               </li>
             </ul>
           </div>
