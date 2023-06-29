@@ -1,16 +1,16 @@
-import { connectToDb } from '@utils/database';
-import Execs from '@models/execs';
+import { connectToDb } from '@utils/database'
+import Execs from '@models/execs'
 
 export const getExecs = async () => {
-  try {
-    await connectToDb();
+    try {
+        await connectToDb()
 
-    const res = await Execs.find({});
+        const res = await Execs.find({})
 
-    return  res;
-  } catch (error) {
-    console.log('Error getting about: ', error);
+        return res
+    } catch (error) {
+        console.log('Error getting about: ', error)
 
-    return { props: { error } };
-  }
-};
+        return { props: { error } }
+    }
+}
