@@ -1,6 +1,8 @@
 import Nav from '@components/Nav';
 import Footer from '@components/Footer';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
+import CookieBanner from '@components/CookieBanner';
+
 
 export const metadata = {
   title: 'CSEA',
@@ -16,6 +18,7 @@ const RootLayout = ({ children }) => {
         <main>
           <Nav />
           {children}
+          <CookieBanner />
           <Footer />
         </main>
       </body>
