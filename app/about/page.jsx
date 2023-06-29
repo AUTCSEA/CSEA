@@ -3,6 +3,11 @@ import ProfileCard from '@components/ProfileCard';
 import { use } from 'react';
 import { getExecs } from '@utils/getExecs';
 import Image from 'next/image';
+
+export const metadata = {
+  title: "CSEA | About Us",
+  description: "Meet the executive team!",
+};
 const About = () => {
   
   const execs = use(getExecs());

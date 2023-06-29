@@ -1,7 +1,6 @@
 'use client';
 import { getLocalStorage, setLocalStorage } from '@utils/storageHelper';
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 
 export default function CookieBanner() {
   const [cookieConsent, setCookieConsent] = useState(false);
@@ -21,8 +20,6 @@ export default function CookieBanner() {
 
     setLocalStorage('cookie_consent', cookieConsent);
 
-    //For Testing
-    console.log('Cookie Consent: ', cookieConsent);
   }, [cookieConsent]);
   return (
     <div
@@ -34,7 +31,7 @@ export default function CookieBanner() {
       <div className='text-center'>
         
           <p>
-            We use <span className='font-bold text-sky-400'>cookies</span> on
+            We use <span className='font-bold text-orange-500'>cookies</span> on
             our site.
           </p>
         
@@ -42,7 +39,7 @@ export default function CookieBanner() {
 
       <div className='flex gap-2'>
         <button
-          className='px-5 py-2 text-gray-300 rounded-md border-gray-900'
+          className='px-5 py-2 text-gray-500 rounded-md border-gray-900'
           onClick={() => setCookieConsent(false)}
         >
           Decline
