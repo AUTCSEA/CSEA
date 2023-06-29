@@ -1,6 +1,6 @@
 import Nav from '@components/Nav';
 import Footer from '@components/Footer';
-
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 export const metadata = {
   title: 'CSEA',
@@ -11,11 +11,12 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang='en'>
-      <body >
-        <main >
+      <GoogleAnalytics GA_MEASUREMENT_ID='G-67JGV4E15D' />
+      <body>
+        <main>
           <Nav />
           {children}
-          <Footer/>
+          <Footer />
         </main>
       </body>
     </html>
