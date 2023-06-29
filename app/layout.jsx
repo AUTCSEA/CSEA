@@ -1,5 +1,7 @@
 import Nav from '@components/Nav';
 import Footer from '@components/Footer';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
+import CookieBanner from '@components/CookieBanner';
 
 
 export const metadata = {
@@ -11,11 +13,13 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang='en'>
-      <body >
-        <main >
+      <GoogleAnalytics GA_MEASUREMENT_ID='G-67JGV4E15D' />
+      <body>
+        <main>
           <Nav />
           {children}
-          <Footer/>
+          <CookieBanner />
+          <Footer />
         </main>
       </body>
     </html>
