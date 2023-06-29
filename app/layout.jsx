@@ -3,7 +3,6 @@ import Footer from '@components/Footer';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import CookieBanner from '@components/CookieBanner';
 
-
 export const metadata = {
   title: 'CSEA | Home',
   description:

@@ -69,10 +69,11 @@ const Home = () => {
       {/* Become a member */}
       <section class="py-20 sm:px-44 flex flex-col items-center sm:items-start bg-[url('/images/backgrounds/2bg-main.png')] bg-cover w-full h-96">
         <h1 class='text-3xl '>Become a member</h1>
-        <p class='mt-5 text-center sm:text-left'>
-          Become a member to get notified about our latest events and workshops,
-          and to gain access to our Internship Portal and Discord server!
-        </p>
+          <p class='mt-5 text-center sm:text-left'>
+            Become a member to get notified about our latest events<br/> and
+            workshops, and to gain access to our Internship Portal and Discord 
+            server!
+          </p>
         <a
           class='py-2 px-10 mt-10 border-4 border-orange-500  text-orange-500 font-bold rounded-md hover:bg-orange-500 hover:text-white ease-in-out transition-all duration-300'
           href='https://docs.google.com/forms/d/e/1FAIpQLSfhGBQs5BR2TInjItgSwcfjcl_UQX1kQbVObsxaPWDdZ81c3w/viewform'
