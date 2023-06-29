@@ -3,11 +3,11 @@ import Footer from '@components/Footer';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import CookieBanner from '@components/CookieBanner';
 
-
 export const metadata = {
   title: 'CSEA | Home',
   description:
     'Auckland University of Technology Computer Science and Engineering Association',
+
 };
 
 const RootLayout = ({ children }) => {
