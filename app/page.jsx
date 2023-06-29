@@ -1,7 +1,5 @@
-// ;==========================================
-// ; Author: Ivan Czar
-// ; Github: https://github.com/ivanczar
-// ;==========================================
+// Author: Ivan Czar
+// Github: https://github.com/ivanczar
 
 import '@styles/globals.css';
 import Image from 'next/image';
@@ -16,9 +14,11 @@ const Home = () => {
     <>
       {/* Hero */}
       <section class='w-full pt-10 pb-20 bg-gradient-to-r from-orange-500 to-yellow-500 h-fit flex-center flex-col mouse-cursor-gradient-tracking'>
-        <h2 class='text-3xl font-bold text-white opacity-70'>{'</>'}</h2>
-        <h1 class='text-9xl text-white font-bold'>csea</h1>
-        <p class=' text-white flex text-center'>
+        <h2 class='text-3xl font-bold text-white opacity-70 cursor-default'>
+          {'</>'}
+        </h2>
+        <h1 class='text-9xl text-white font-bold cursor-default'>csea</h1>
+        <p class=' text-white flex text-center cursor-default'>
           Computer Science & Engineering Association
         </p>
         <a
@@ -93,7 +93,7 @@ const Home = () => {
         <span class='bg-gradient-to-r from-yellow-400 via-amber-400 to-yellow-400 bg-clip-text text-transparent text-6xl font-bold mt-20 self-center'>
           GOLD
         </span>
-        <div class='flex flex-row items-center justify-center mt-24'>
+        <div class='flex flex-row items-center justify-center mt-24 h-24'>
           <Image src={eyLogo} alt='EY' class='sm:h-40 h-10 w-auto  ' />
           <Image src={ezyvetLogo} alt='ezyVet' class='sm:w-2/12 w-1/2' />
         </div>
