@@ -7,11 +7,12 @@
     "build": "next build",
     "start": "next start",
     "check-format": "prettier --check .",
-    "check-lint": "eslint . --ext ts --ext tsx --ext js",
+    "check-lint": "eslint . --ext js --ext jsx",
     "format": "prettier --write .",
     "prepare": "husky install"
   },
   "dependencies": {
+    "@next/font": "^13.4.7",
     "autoprefixer": "10.4.14",
     "mongodb": "^5.6.0",
     "mongoose": "^7.2.3",
