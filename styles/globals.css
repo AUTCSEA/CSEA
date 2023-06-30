@@ -1,105 +1,97 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 html,
 body {
-  max-width: 100%;
-  overflow-x: hidden;
-  font-family: "Inter", sans-serif;
-
+    max-width: 100%;
+    overflow-x: hidden;
 }
-
-
 
 .no-scroll {
-  overflow: hidden;
-  margin: 0;
-  height: 100vh;
-
-
+    overflow: hidden;
+    margin: 0;
+    height: 100vh;
 }
 
-
 .flex-center {
-  @apply flex justify-center items-center;
+    @apply flex justify-center items-center;
 }
 
 .flex-start {
-  @apply flex justify-start items-start;
+    @apply flex justify-start items-start;
 }
 
 .flex-end {
-  @apply flex justify-end items-center;
+    @apply flex justify-end items-center;
 }
 
 .flex-between {
-  @apply flex justify-between items-center;
+    @apply flex justify-between items-center;
 }
 
 /* Nav and stroke effect */
 nav ul li {
-  display: inline-block;
+    display: inline-block;
 }
 
 nav ul li a {
-  display: block;
-  padding: 15px;
-  text-decoration: none;
-  margin: 0 10px;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
-  transition: all .5s;
+    transition: all 0.5s;
 }
 
 nav.stroke ul li a {
-  position: relative;
+    position: relative;
 }
 
 nav.stroke ul li a:after,
 nav.fill ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #ffffff;
-  height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #ffffff;
+    height: 2px;
 }
 
 nav.stroke ul li a:hover:after {
-  width: 100%;
+    width: 100%;
 }
 
 nav.fill ul li a {
-  transition: all 2s;
+    transition: all 2s;
 }
 
 nav.fill ul li a:after {
-  text-align: left;
-  content: '.';
-  margin: 0;
-  opacity: 0;
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
 }
 
 nav.fill ul li a:hover {
-  color: #fff;
-  z-index: 1;
+    color: #fff;
+    z-index: 1;
 }
 
 nav.fill ul li a:hover:after {
-  z-index: -10;
-  animation: fill 1s forwards;
-  -webkit-animation: fill 1s forwards;
-  -moz-animation: fill 1s forwards;
-  opacity: 1;
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
 }
