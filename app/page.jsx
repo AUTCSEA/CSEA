@@ -35,7 +35,7 @@ const Home = () => {
                 </p>
 
                 {/* Card container */}
-                <div class=" w-screen flex flex-col items-center mt-10 sm:flex-row sm:flex-wrap sm:justify-between px-5 sm:px-10 md:px-54 lg:px-40 ">
+                <div class=" w-screen flex flex-col items-center mt-10 sm:flex-row sm:flex-wrap sm:justify-between px-5 sm:px-10 md:px-54 lg:px-20 ">
                     <AboutCard
                         title="Host Events"
                         subtitle="We regularly host events like hackathons, workshops, and expert
