@@ -1,0 +1,14 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://www.csea.co.nz/</loc>
+        <changefreq>monthly</changefreq> 
+        <priority>0.9</priority>
+        <lastmod>2023-07-30</lastmod>
+    </url>
+    <url>
+        <loc>http://www.csea.co.nz/about</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <lastmod>2023-07-30</lastmod>
+    </url>
+</urlset>

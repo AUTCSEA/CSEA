@@ -30,12 +30,12 @@ const Home = () => {
             {/* What we do */}
             <section class="w-full py-20 flex flex-col flex-center bg-slate-200">
                 <h1 class="text-3xl">What we do</h1>
-                <p class="mt-10 text-center">
+                <p class="mt-10 text-center px-10">
                     We are a student run club for AUT but students from other institutions are welcome!
                 </p>
 
                 {/* Card container */}
-                <div class=" w-screen flex flex-col items-center mt-10 sm:flex-row sm:flex-wrap sm:justify-between px-5 sm:px-10 md:px-54 lg:px-40 ">
+                <div class=" w-screen flex flex-col items-center mt-10 sm:flex-row sm:flex-wrap sm:justify-between px-5 sm:px-10 md:px-54 lg:px-20 ">
                     <AboutCard
                         title="Host Events"
                         subtitle="We regularly host events like hackathons, workshops, and expert
@@ -64,7 +64,7 @@ const Home = () => {
             {/* Become a member */}
             <section class="py-20 sm:px-44 flex flex-col items-center sm:items-start bg-[url('/images/backgrounds/2bg-main.png')] bg-cover w-full h-96">
                 <h1 class="text-3xl ">Become a member</h1>
-                <p class="mt-5 text-center sm:text-left">
+                <p class="mt-5 text-center sm:text-left px-10 sm:px-0">
                     Become a member to get notified about our latest events
                     <br /> and workshops, and to gain access to our Internship Portal and Discord server!
                 </p>
@@ -80,7 +80,7 @@ const Home = () => {
             {/* Sponsors */}
             <section class="pt-20 pb-44 sm:px-20 bg-slate-200 flex flex-col ">
                 <h1 class="text-3xl self-center">Our Sponsors</h1>
-                <p class="mt-10 self-center text-center">We are proud to share our sponsors for 2023</p>
+                <p class="mt-10 self-center text-center px-10">We are proud to share our sponsors for 2023</p>
 
                 {/* Gold sponsors */}
                 <span class="bg-gradient-to-r from-yellow-400 via-amber-400 to-yellow-400 bg-clip-text text-transparent text-6xl font-bold mt-20 self-center">
