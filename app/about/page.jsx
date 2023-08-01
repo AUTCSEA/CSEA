@@ -36,7 +36,6 @@ const About = () => {
                             position={exec.position}
                             linkedinURL={exec.linkedinURL}
                             image={exec.imageURL}
-                            placeholder="blur"
                             key={exec._id}
                         />
                     ))}
