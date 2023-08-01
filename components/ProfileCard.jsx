@@ -10,7 +10,8 @@ const ProfileCard = ({ name, position, linkedinURL, image }) => {
                 src={`https://res.cloudinary.com/${process.env.CLOUDINARY_ID}/image/upload/q_auto/fl_lossy/f_auto/${image}`}
                 sizes="50vw"
                 alt={name}
-                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8WSxWDwAF8gIDPBcqaAAAAABJRU5ErkJggg=="
             ></Image>
 
             <div class="absolute bg-white w-full h-full opacity-0 hover:opacity-80 ease-in-out transition-all duration-300 flex flex-col flex-center">
