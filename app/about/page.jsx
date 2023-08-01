@@ -18,6 +18,7 @@ const About = () => {
                     <Image
                         src="https://res.cloudinary.com/dlguyvrg5/image/upload/q_auto/fl_lossy/f_auto/v1686968702/aboutBanner_r7ou9h.jpg"
                         fill={true}
+                        style={{ objectFit: 'cover' }}
                         alt="header"
                         loading="eager"
                     />
