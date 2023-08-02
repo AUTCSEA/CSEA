@@ -9,6 +9,34 @@ import eyLogo from '@public/images/sponsors/ey.png'
 import ezyvetLogo from '@public/images/sponsors/ezyvet.png'
 import atlassianLogo from '@public/images/sponsors/atlassian.png'
 
+export const metadata = {
+    openGraph: {
+        title: 'Home',
+        description:
+            'Attend our events, network with industry experts, and gain access to internship opportunities within the New Zealand tech industry.',
+        url: 'https://csea.co.nz',
+        siteName: 'CSEA',
+        images: [
+            {
+                url: '/images/preview.png',
+                width: 800,
+                height: 600,
+                alt: 'CSEA logo',
+            },
+            {
+                url: '/images/preview.png',
+                width: 1800,
+                height: 1600,
+                alt: 'CSEA logo',
+            },
+        ],
+        locale: 'en_NZ',
+        type: 'website',
+    },
+    title: 'Home | CSEA',
+    description:
+        'Attend our events, network with industry experts, and gain access to internship opportunities within the New Zealand tech industry.',
+}
 const Home = () => {
     return (
         <>
