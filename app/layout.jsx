@@ -6,7 +6,7 @@ import CookieBanner from '@components/CookieBanner'
 import { InterFont } from '@utils/fonts'
 
 export const metadata = {
-    metadataBase: new URL('https://csea.co.nz'),
+    metadataBase: new URL('http://csea.co.nz'),
 }
 
 const RootLayout = ({ children }) => {
