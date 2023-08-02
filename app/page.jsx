@@ -18,13 +18,13 @@ export const metadata = {
         siteName: 'CSEA',
         images: [
             {
-                url: '/images/preview.png',
+                url: 'https://res.cloudinary.com/dlguyvrg5/image/upload/q_auto/fl_lossy/f_auto/v1690942287/preview_sb9yoq.png',
                 width: 800,
                 height: 600,
                 alt: 'CSEA logo',
             },
             {
-                url: '/images/preview.png',
+                url: 'https://res.cloudinary.com/dlguyvrg5/image/upload/q_auto/fl_lossy/f_auto/v1690942287/preview_sb9yoq.png',
                 width: 1800,
                 height: 1600,
                 alt: 'CSEA logo',
