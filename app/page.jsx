@@ -22,6 +22,7 @@ export const metadata = {
         images: [
             {
                 url: 'https://res.cloudinary.com/dlguyvrg5/image/upload/q_auto/fl_lossy/f_auto/v1690948956/opengraph-image_dud47c.jpg',
+                type: 'image/jpeg',
                 width: 800,
                 height: 600,
                 alt: 'CSEA logo',
