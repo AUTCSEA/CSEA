@@ -5,6 +5,10 @@ import GoogleAnalytics from '@/components/GoogleAnalytics'
 import CookieBanner from '@components/CookieBanner'
 import { InterFont } from '@utils/fonts'
 
+export const metadata = {
+    metadataBase: new URL('https://csea.co.nz'),
+}
+
 const RootLayout = ({ children }) => {
     return (
         <html lang="en">

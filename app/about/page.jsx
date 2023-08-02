@@ -7,6 +7,15 @@ import Image from 'next/image'
 export const metadata = {
     title: 'About Us | CSEA',
     description: 'Meet the executive team behind CSEA!',
+    openGraph: {
+        title: 'Home',
+        description:
+            'Attend our events, network with industry experts, and gain access to internship opportunities within the New Zealand tech industry.',
+        url: 'https://csea.co.nz',
+        siteName: 'CSEA',
+        locale: 'en_NZ',
+        type: 'website',
+    },
 }
 const About = () => {
     const execs = use(getExecs())
