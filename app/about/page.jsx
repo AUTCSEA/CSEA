@@ -11,6 +11,23 @@ export const metadata = {
         title: 'About Us',
         description: 'Meet the executive team behind CSEA!',
         url: 'https://csea.co.nz/about',
+        siteName: 'CSEA',
+        images: [
+            {
+                url: 'https://res.cloudinary.com/dlguyvrg5/image/upload/q_auto/fl_lossy/f_auto/v1690948956/opengraph-image_dud47c.jpg',
+                width: 800,
+                height: 600,
+                alt: 'CSEA logo',
+            },
+            {
+                url: 'https://res.cloudinary.com/dlguyvrg5/image/upload/q_auto/fl_lossy/f_auto/v1690948956/opengraph-image_dud47c.jpg',
+                width: 1800,
+                height: 1600,
+                alt: 'CSEA logo',
+            },
+        ],
+        locale: 'en_NZ',
+        type: 'website',
     },
 }
 const About = () => {
