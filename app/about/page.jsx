@@ -8,7 +8,7 @@ export const metadata = {
     title: 'About Us | CSEA',
     description: 'Meet the executive team behind CSEA!',
     openGraph: {
-        title: 'About Us',
+        title: 'About Us | CSEA',
         description: 'Meet the executive team behind CSEA!',
         url: 'https://csea.co.nz/about',
         siteName: 'CSEA',

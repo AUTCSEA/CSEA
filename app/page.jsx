@@ -14,7 +14,7 @@ export const metadata = {
     description:
         'Attend our events, network with industry experts, and gain access to internship opportunities within the New Zealand tech industry.',
     openGraph: {
-        title: 'Home',
+        title: 'Home | CSEA',
         description:
             'Attend our events, network with industry experts, and gain access to internship opportunities within the New Zealand tech industry.',
         url: 'https://csea.co.nz',
