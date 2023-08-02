@@ -5,11 +5,6 @@ import GoogleAnalytics from '@/components/GoogleAnalytics'
 import CookieBanner from '@components/CookieBanner'
 import { InterFont } from '@utils/fonts'
 
-export const metadata = {
-    title: 'CSEA | Home',
-    description: 'Auckland University of Technology Computer Science and Engineering Association',
-}
-
 const RootLayout = ({ children }) => {
     return (
         <html lang="en">

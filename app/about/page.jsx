@@ -5,8 +5,29 @@ import { getExecs } from '@utils/getExecs'
 import Image from 'next/image'
 
 export const metadata = {
-    title: 'CSEA | About Us',
-    description: 'Meet the executive team!',
+    openGraph: {
+        title: 'About Us',
+        description: 'Meet the executive team behind CSEA!',
+        url: 'https://csea.co.nz/about',
+        siteName: 'CSEA',
+        images: [
+            {
+                url: '/images/preview.png',
+                width: 800,
+                height: 600,
+            },
+            {
+                url: '/images/preview.png',
+                width: 1800,
+                height: 1600,
+                alt: 'CSEA logo',
+            },
+        ],
+        locale: 'en_NZ',
+        type: 'website',
+    },
+    title: 'About Us | CSEA',
+    description: 'Meet the executive team behind CSEA!',
 }
 const About = () => {
     const execs = use(getExecs())
