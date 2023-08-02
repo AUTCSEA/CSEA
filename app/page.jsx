@@ -13,6 +13,31 @@ export const metadata = {
     title: 'Home | CSEA',
     description:
         'Attend our events, network with industry experts, and gain access to internship opportunities within the New Zealand tech industry.',
+    openGraph: {
+        title: 'Home',
+        description:
+            'Attend our events, network with industry experts, and gain access to internship opportunities within the New Zealand tech industry.',
+        url: 'https://csea.co.nz',
+        siteName: 'CSEA',
+        images: [
+            {
+                url: 'https://res.cloudinary.com/dlguyvrg5/image/upload/v1690948956/opengraph-image_dud47c.jpg',
+                type: 'image/jpeg',
+                width: 800,
+                height: 600,
+                alt: 'CSEA logo',
+            },
+            {
+                url: 'https://res.cloudinary.com/dlguyvrg5/image/upload/v1690948956/opengraph-image_dud47c.jpg',
+                type: 'image/jpeg',
+                width: 1800,
+                height: 1600,
+                alt: 'CSEA logo',
+            },
+        ],
+        locale: 'en_NZ',
+        type: 'website',
+    },
 }
 const Home = () => {
     return (
