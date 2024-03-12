@@ -1,8 +1,8 @@
 import '@styles/globals.css'
 import ProfileCard from '@components/ProfileCard'
 import { use } from 'react'
-import { getExecs } from '@utils/getExecs'
 import Image from 'next/image'
+import execs from '../../components/data/execs.js'
 
 export const metadata = {
     title: 'About Us | CSEA',
@@ -17,14 +17,13 @@ export const metadata = {
     },
 }
 const About = () => {
-    const execs = use(getExecs())
     return (
         <>
             {/* Header Image */}
             <section className=" w-full h-80 sm:h-96 relative flex flex-center bg-orange-500">
                 <div className="w-full h-full absolute">
                     <Image
-                        src="https://res.cloudinary.com/dlguyvrg5/image/upload/q_auto/fl_lossy/f_auto/v1686968702/aboutBanner_r7ou9h.jpg"
+                        src={`https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/image/upload/q_auto/fl_lossy/f_auto/v1686968702/aboutBanner_r7ou9h.jpg`}
                         fill={true}
                         style={{ objectFit: 'cover' }}
                         alt="header"
@@ -37,17 +36,19 @@ const About = () => {
             {/* About */}
             <section className=" flex flex-col flex-center mb-10">
                 <h1 className="text-3xl my-16 ">Meet the executive team!</h1>
-                {/* <div className="h-fit grid grid-cols-2 gap-3 sm:gap-8 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4">
-                    {execs.map((exec) => (
-                        <ProfileCard
-                            name={exec.name}
-                            position={exec.position}
-                            linkedinURL={exec.linkedinURL}
-                            image={exec.imageURL}
-                            key={exec._id}
-                        />
-                    ))}
-                </div> */}
+                {execs && (
+                    <div className="h-fit grid grid-cols-2 gap-3 sm:gap-8 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4">
+                        {execs.map((exec, index) => (
+                            <ProfileCard
+                                name={exec.name}
+                                position={exec.position}
+                                linkedinURL={exec.linkedinURL}
+                                image={exec.imageURL}
+                                key={index}
+                            />
+                        ))}
+                    </div>
+                )}
             </section>
         </>
     )

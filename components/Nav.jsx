@@ -9,7 +9,6 @@ const Nav = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     const handleClick = (e) => {
-        document.body.classNameList.toggle('no-scroll')
         setIsOpen(!isOpen)
     }
     return (

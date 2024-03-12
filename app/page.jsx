@@ -6,8 +6,9 @@ import Image from 'next/image'
 import AboutCard from '@components/AboutCard'
 import Socials from '@components/Socials'
 import eyLogo from '@public/images/sponsors/ey.png'
-import ezyvetLogo from '@public/images/sponsors/ezyvet.png'
 import atlassianLogo from '@public/images/sponsors/atlassian.png'
+import sandfieldLogo from '@public/images/sponsors/sandfield.png'
+import masLogo from '@public/images/sponsors/mas.png'
 
 export const metadata = {
     title: 'Home | CSEA',
@@ -34,7 +35,7 @@ const Home = () => {
                     Computer Science & Engineering Association
                 </p>
                 <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSfhGBQs5BR2TInjItgSwcfjcl_UQX1kQbVObsxaPWDdZ81c3w/viewform"
+                    href={process.env.GOOGLE_FORM}
                     target="_blank"
                     className="py-2 px-10 my-10 bg-orange-500 text-white rounded-md hover:bg-white hover:text-orange-500 ease-in-out transition-all duration-300"
                 >
@@ -86,7 +87,7 @@ const Home = () => {
                 </p>
                 <a
                     className="py-2 px-10 mt-10 border-4 border-orange-500  text-orange-500 font-bold rounded-md hover:bg-orange-500 hover:text-white ease-in-out transition-all duration-300"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSfhGBQs5BR2TInjItgSwcfjcl_UQX1kQbVObsxaPWDdZ81c3w/viewform"
+                    href={process.env.GOOGLE_FORM}
                     target="_blank"
                 >
                     Join Us
@@ -103,8 +104,7 @@ const Home = () => {
                     GOLD
                 </span>
                 <div className="flex flex-row items-center justify-center mt-24 h-24">
-                    <Image src={eyLogo} alt="EY" className="sm:h-40 h-10 w-auto  " />
-                    <Image src={ezyvetLogo} alt="ezyVet" className="sm:w-2/12 w-1/2" />
+                    <Image src={eyLogo} alt="EY" className="sm:h-40 h-36 w-auto  " />
                 </div>
 
                 <hr className="h-px w-4/5 my-20 bg-black border-0 dark:bg-gray-700 flex self-center" />
@@ -113,8 +113,19 @@ const Home = () => {
                 <span className="bg-gradient-to-r from-slate-400 via-zinc-200 to-slate-400 bg-clip-text text-transparent text-6xl font-bold self-center">
                     Silver
                 </span>
+                <div className="flex flex-row items-center sm:justify-center sm:space-x-20 mt-10">
+                    <Image src={masLogo} alt="mas" className="sm:w-2/12 w-1/2 " />
+                    <Image src={sandfieldLogo} alt="Sandfield" className="sm:w-2/12 w-1/2 " />
+                </div>
+
+                <hr className="h-px w-4/5 my-20 bg-black border-0 dark:bg-gray-700 flex self-center" />
+
+                {/* Bronze Sponsors */}
+                <span className="bg-gradient-to-r from-yellow-700 via-yellow-500 to-yellow-600 bg-clip-text text-transparent text-6xl font-bold self-center">
+                    Bronze
+                </span>
                 <div className="flex flex-row items-center justify-evenly mt-10">
-                    <Image src={atlassianLogo} alt="Atlassian" className="sm:w-2/12 w-1/2 " />
+                    <Image src={atlassianLogo} alt="Atlassian" className="sm:w-2/12 w-1/2 mt-2" />
                 </div>
             </section>
         </>

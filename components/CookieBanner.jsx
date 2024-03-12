@@ -24,30 +24,27 @@ export default function CookieBanner() {
     }, [cookieConsent])
     return (
         <div
-            classNameName={`my-10 mx-auto max-w-max md:max-w-screen-sm
+            className={`my-10 mx-auto max-w-max md:max-w-screen-sm
                         fixed bottom-0 left-0 right-0 
                         ${
                             cookieConsent != null ? 'hidden' : 'flex'
                         } px-3 md:px-4 py-3 justify-between items-center flex-col sm:flex-row gap-4  
                          bg-white rounded-lg shadow`}
         >
-            <div classNameName="text-center">
+            <div className="text-center">
                 <p>
-                    We use <span classNameName="font-bold text-orange-500">cookies</span> on our site.
+                    We use <span className="font-bold text-orange-500">cookies</span> on our site.
                 </p>
             </div>
 
-            <div classNameName="flex gap-2">
+            <div className="flex gap-2">
                 <button
-                    classNameName="px-5 py-2 text-gray-500 rounded-md border-gray-900"
+                    className="px-5 py-2 text-gray-500 rounded-md border-gray-900"
                     onClick={() => setCookieConsent(false)}
                 >
                     Decline
                 </button>
-                <button
-                    classNameName="bg-gray-900 px-5 py-2 text-white rounded-lg"
-                    onClick={() => setCookieConsent(true)}
-                >
+                <button className="bg-gray-900 px-5 py-2 text-white rounded-lg" onClick={() => setCookieConsent(true)}>
                     Allow Cookies
                 </button>
             </div>

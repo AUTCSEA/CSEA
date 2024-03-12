@@ -13,10 +13,10 @@ export const metadata = {
 const RootLayout = ({ children }) => {
     return (
         <html lang="en">
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense>
                 <GoogleAnalytics GA_MEASUREMENT_ID="G-67JGV4E15D" />
             </Suspense>
-            <body classNameName={InterFont.classNameName}>
+            <body className={InterFont.className}>
                 <main>
                     <Nav />
                     {children}
