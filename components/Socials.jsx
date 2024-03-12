@@ -2,7 +2,7 @@ import { IoLogoInstagram, IoLogoLinkedin, IoLogoFacebook } from 'react-icons/io'
 
 const Socials = ({ size: textSize, width }) => {
     return (
-        <div class={`w-${width} flex text-white text-${textSize} sm:justify-between  `}>
+        <div className={`w-${width} flex text-white text-${textSize} sm:justify-between  `}>
             <a href="https://www.instagram.com/autcsea/?hl=en" target="_blank">
                 <IoLogoInstagram />
             </a>

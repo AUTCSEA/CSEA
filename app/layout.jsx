@@ -16,7 +16,7 @@ const RootLayout = ({ children }) => {
             <Suspense fallback={<div>Loading...</div>}>
                 <GoogleAnalytics GA_MEASUREMENT_ID="G-67JGV4E15D" />
             </Suspense>
-            <body className={InterFont.className}>
+            <body classNameName={InterFont.classNameName}>
                 <main>
                     <Nav />
                     {children}
