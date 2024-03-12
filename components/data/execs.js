@@ -39,13 +39,13 @@ const execs = [
         name: 'Francisca Nel',
         imageURL: 'francisca',
         linkedinURL: 'https://www.linkedin.com/in/francisca-nel-3b9276277/',
-        position: 'Marketing name Executive',
+        position: 'Marketing Executive',
     },
     {
         name: 'Kareena K.',
         imageURL: 'kareena',
         linkedinURL: 'https://www.linkedin.com/in/kareena-kumar/',
-        position: 'Social Media Executive',
+        position: 'Social Media Exec.',
     },
     {
         name: 'Eden Bacani',
