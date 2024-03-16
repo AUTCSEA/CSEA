@@ -9,6 +9,7 @@ import eyLogo from '@public/images/sponsors/ey.png'
 import atlassianLogo from '@public/images/sponsors/atlassian.png'
 import sandfieldLogo from '@public/images/sponsors/sandfield.png'
 import masLogo from '@public/images/sponsors/mas.png'
+import { getCurrentYear } from '@utils/getCurrentYear'
 
 export const metadata = {
     title: 'Home | CSEA',
@@ -25,6 +26,7 @@ export const metadata = {
     },
 }
 const Home = () => {
+    const currentYear = getCurrentYear()
     return (
         <>
             {/* Hero */}
@@ -96,9 +98,7 @@ const Home = () => {
 
             {/* Sponsors */}
             <section className="pt-20 pb-44 sm:px-20 bg-slate-200 flex flex-col ">
-                <h1 className="text-3xl self-center">Our Sponsors</h1>
-                <p className="mt-10 self-center text-center px-10">We are proud to share our sponsors for 2023</p>
-
+                <h1 className="text-3xl self-center">Our sponsors for {currentYear}</h1>
                 {/* Gold sponsors */}
                 <span className="bg-gradient-to-r from-yellow-400 via-amber-400 to-yellow-400 bg-clip-text text-transparent text-6xl font-bold mt-20 self-center">
                     GOLD

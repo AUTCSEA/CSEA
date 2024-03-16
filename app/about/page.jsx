@@ -1,6 +1,5 @@
 import '@styles/globals.css'
 import ProfileCard from '@components/ProfileCard'
-import { use } from 'react'
 import Image from 'next/image'
 import execs from '../../components/data/execs.js'
 
