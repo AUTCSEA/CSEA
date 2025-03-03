@@ -19,17 +19,19 @@ const About = () => {
     return (
         <>
             {/* Header Image */}
-            <section className=" w-full h-80 sm:h-96 relative flex flex-center bg-orange-500">
-                <div className="w-full h-full absolute">
-                    <Image
-                        src={`https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/image/upload/q_auto/fl_lossy/f_auto/v1686968702/aboutBanner_r7ou9h.jpg`}
-                        fill={true}
-                        style={{ objectFit: 'cover' }}
-                        alt="header"
-                        loading="eager"
-                    />
+
+            <section className="w-full h-80 sm:h-96 relative flex justify-center items-center overflow-hidden">
+                {/* Video Container */}
+                <div className="absolute inset-0 w-full h-full">
+                    <video className="w-full h-full object-cover" autoPlay loop>
+                        <source
+                            src={`https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/q_auto/fl_lossy/f_auto/v1686968702/banner_2_mp4.mp4`}
+                        />
+                    </video>
                 </div>
-                <div className="flex absolute flex-center bg-orange-400 w-full h-full opacity-60"></div>
+
+                {/* Orange Tint */}
+                <div className="absolute inset-0 bg-orange-500 opacity-40"></div>
             </section>
 
             {/* About */}
