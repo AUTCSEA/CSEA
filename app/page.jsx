@@ -115,8 +115,8 @@ const Home = () => {
                 <span className="bg-gradient-to-r from-slate-400 via-zinc-200 to-slate-400 bg-clip-text text-transparent text-6xl font-bold self-center">
                     Silver
                 </span>
-                <div className="flex flex-row items-center sm:justify-center sm:space-x-20 mt-10">
-                    <Image src={sandfieldLogo} alt="Sandfield" className="sm:w-2/12 w-1/2 " />
+                <div className="flex flex-col sm:flex-row items-center sm:justify-center sm:space-x-20 mt-10">
+                    <Image src={sandfieldLogo} alt="Sandfield" className="sm:w-2/12 w-1/2 mt-2" />
                 </div>
 
                 <hr className="h-px w-4/5 my-20 bg-black border-0 dark:bg-gray-700 flex self-center" />
@@ -125,7 +125,7 @@ const Home = () => {
                 <span className="bg-gradient-to-r from-yellow-700 via-yellow-500 to-yellow-600 bg-clip-text text-transparent text-6xl font-bold self-center">
                     Bronze
                 </span>
-                <div className="flex flex-row items-center justify-evenly mt-10">
+                <div className="flex flex-col sm:flex-row items-center justify-evenly mt-10">
                     <Image src={suncorpLogo} alt="Suncorp" className="sm:w-2/12 w-1/2 mt-2" />
                     <Image src={fpLogo} alt="F&P" className="sm:w-2/12 w-1/2 mt-2" />
                 </div>
