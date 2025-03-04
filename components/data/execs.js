@@ -86,12 +86,6 @@ const execs = [
         position: 'General Executive',
     },
     {
-        name: 'Ben Mitchell',
-        imageURL: 'ben',
-        linkedinURL: 'https://www.linkedin.com/in/benji-mitchell/',
-        position: 'General Executive',
-    },
-    {
         name: 'Kiesya Liew',
         imageURL: 'kiesya',
         linkedinURL: 'https://www.linkedin.com/in/kiesya88/',
