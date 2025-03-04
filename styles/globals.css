@@ -95,9 +95,3 @@ nav.fill ul li a:hover:after {
     -moz-animation: fill 1s forwards;
     opacity: 1;
 }
-
-@media screen and (min-width: 600px) {
-    .mobile-break {
-        display: none;
-    }
-}
