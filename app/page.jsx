@@ -5,11 +5,13 @@ import '@styles/globals.css'
 import Image from 'next/image'
 import AboutCard from '@components/AboutCard'
 import Socials from '@components/Socials'
-import eyLogo from '@public/images/sponsors/ey.png'
-import atlassianLogo from '@public/images/sponsors/atlassian.png'
-import sandfieldLogo from '@public/images/sponsors/sandfield.png'
-import masLogo from '@public/images/sponsors/mas.png'
 import { getCurrentYear } from '@utils/getCurrentYear'
+
+// Sponsors import
+import eyLogo from '@public/images/sponsors/ey.png'
+import sandfieldLogo from '@public/images/sponsors/sandfield.png'
+import suncorpLogo from '@public/images/sponsors/suncorp.png'
+import fpLogo from '@public/images/sponsors/fp.jpg'
 
 export const metadata = {
     title: 'Home | CSEA',
@@ -114,7 +116,6 @@ const Home = () => {
                     Silver
                 </span>
                 <div className="flex flex-row items-center sm:justify-center sm:space-x-20 mt-10">
-                    <Image src={masLogo} alt="mas" className="sm:w-2/12 w-1/2 " />
                     <Image src={sandfieldLogo} alt="Sandfield" className="sm:w-2/12 w-1/2 " />
                 </div>
 
@@ -125,7 +126,8 @@ const Home = () => {
                     Bronze
                 </span>
                 <div className="flex flex-row items-center justify-evenly mt-10">
-                    <Image src={atlassianLogo} alt="Atlassian" className="sm:w-2/12 w-1/2 mt-2" />
+                    <Image src={suncorpLogo} alt="Suncorp" className="sm:w-2/12 w-1/2 mt-2" />
+                    <Image src={fpLogo} alt="F&P" className="sm:w-2/12 w-1/2 mt-2" />
                 </div>
             </section>
         </>
