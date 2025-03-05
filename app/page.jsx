@@ -125,7 +125,7 @@ const Home = () => {
                 <span className="bg-gradient-to-r from-yellow-700 via-yellow-500 to-yellow-600 bg-clip-text text-transparent text-6xl font-bold self-center">
                     Bronze
                 </span>
-                <div className="flex flex-col sm:flex-row items-center justify-evenly mt-10">
+                <div className="flex flex-col sm:flex-row items-center justify-evenly mt-10 space-y-12 sm:space-y-0">
                     <Image src={suncorpLogo} alt="Suncorp" className="sm:w-2/12 w-1/2 mt-2" />
                     <Image src={fpLogo} alt="F&P" className="sm:w-2/12 w-1/2 mt-2" />
                 </div>
