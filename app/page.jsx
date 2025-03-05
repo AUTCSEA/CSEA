@@ -7,11 +7,11 @@ import AboutCard from '@components/AboutCard'
 import Socials from '@components/Socials'
 import { getCurrentYear } from '@utils/getCurrentYear'
 
-// Sponsors import
-import eyLogo from '@public/images/sponsors/ey.jpg'
-import sandfieldLogo from '@public/images/sponsors/sandfield.png'
-import suncorpLogo from '@public/images/sponsors/suncorp.png'
-import fpLogo from '@public/images/sponsors/fp.jpg'
+// Sponsors logos
+import eyLogo from '@public/images/sponsors/ey.svg'
+import sandfieldLogo from '@public/images/sponsors/sandfield.svg'
+import suncorpLogo from '@public/images/sponsors/suncorp.svg'
+import fisherandpaykelLogo from '@public/images/sponsors/fisherandpaykel.svg'
 
 export const metadata = {
     title: 'Home | CSEA',
@@ -127,7 +127,7 @@ const Home = () => {
                 </span>
                 <div className="flex flex-col sm:flex-row items-center justify-evenly mt-10 space-y-12 sm:space-y-0">
                     <Image src={suncorpLogo} alt="Suncorp" className="sm:w-2/12 w-1/2 mt-2" />
-                    <Image src={fpLogo} alt="F&P" className="sm:w-2/12 w-1/2 mt-2" />
+                    <Image src={fisherandpaykelLogo} alt="Fisher & Paykel" className="sm:w-2/12 w-1/2 mt-2" />
                 </div>
             </section>
         </>
