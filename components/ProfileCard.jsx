@@ -7,7 +7,7 @@ const ProfileCard = ({ name, position, linkedinURL, image }) => {
             <Image
                 style={{ 'object-fit': 'cover' }}
                 fill={true}
-                src={`https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/image/upload/q_auto/fl_lossy/f_auto/${image}`}
+                src={`https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/image/upload/q_auto/fl_lossy/f_auto/execs/${image}`}
                 sizes="50vw"
                 alt={name}
             ></Image>
