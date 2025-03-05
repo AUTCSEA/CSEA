@@ -8,7 +8,7 @@ import Socials from '@components/Socials'
 import { getCurrentYear } from '@utils/getCurrentYear'
 
 // Sponsors import
-import eyLogo from '@public/images/sponsors/ey.png'
+import eyLogo from '@public/images/sponsors/ey.jpg'
 import sandfieldLogo from '@public/images/sponsors/sandfield.png'
 import suncorpLogo from '@public/images/sponsors/suncorp.png'
 import fpLogo from '@public/images/sponsors/fp.jpg'
@@ -105,7 +105,7 @@ const Home = () => {
                 <span className="bg-gradient-to-r from-yellow-400 via-amber-400 to-yellow-400 bg-clip-text text-transparent text-6xl font-bold mt-20 self-center">
                     GOLD
                 </span>
-                <div className="flex flex-row items-center justify-center mt-24 h-24">
+                <div className="flex flex-col sm:flex-row items-center justify-center mt-24 h-24">
                     <Image src={eyLogo} alt="EY" className="sm:h-40 h-36 w-auto  " />
                 </div>
 
