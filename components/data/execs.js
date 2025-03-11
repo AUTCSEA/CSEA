@@ -91,6 +91,12 @@ const execs = [
         linkedinURL: 'https://www.linkedin.com/in/kiesya88/',
         position: 'General Executive',
     },
+    {
+        name: 'Ben Mitchell',
+        imageURL: 'ben.png',
+        linkedinURL: 'https://www.linkedin.com/in/benji-mitchell/',
+        position: 'General Executive',
+    },
 ]
 
 export default execs
