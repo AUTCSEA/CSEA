@@ -23,7 +23,7 @@ const About = () => {
             <section className="w-full h-80 sm:h-96 relative flex justify-center items-center overflow-hidden">
                 {/* Video Container */}
                 <div className="absolute inset-0 w-full h-full">
-                    <video className="w-full h-full object-cover" autoPlay loop>
+                    <video className="w-full h-full object-cover" autoPlay loop muted playsInline>
                         <source
                             src={`https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/q_auto/fl_lossy/f_auto/v1686968702/banner_2_mp4.mp4`}
                         />
