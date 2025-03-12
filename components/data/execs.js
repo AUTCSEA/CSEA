@@ -62,6 +62,12 @@ const execs = [
         position: 'Content Creator',
     },
     {
+        name: 'Isaac Tan',
+        imageURL: 'isaac',
+        linkedinURL: 'https://www.linkedin.com/in/isaac-tan-20812823a/',
+        position: 'Content Creator',
+    },
+    {
         name: 'Nicolas Ferreira',
         imageURL: 'nicolas',
         linkedinURL: 'https://www.linkedin.com/in/nicolas-limberger-ferreira-9b8405209/',
@@ -96,12 +102,6 @@ const execs = [
         imageURL: 'ben',
         linkedinURL: 'https://www.linkedin.com/in/benji-mitchell/',
         position: 'General Executive',
-    },
-    {
-        name: 'Isaac Tan',
-        imageURL: 'isaac',
-        linkedinURL: 'https://www.linkedin.com/in/isaac-tan-20812823a/',
-        position: 'General Exec',
     },
 ]
 
