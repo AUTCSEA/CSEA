@@ -39,7 +39,8 @@ const Home = () => {
                     Computer Science & Engineering Association
                 </p>
                 <a
-                    href={process.env.GOOGLE_FORM}
+                    // The form has to be updated each year to the new matching one.
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeLug0wQEULQqXvjeA2Im1Gx9w9RXE6RU1-nqCKIfLMCLOKMQ/viewform"
                     target="_blank"
                     className="py-2 px-10 my-10 bg-orange-500 text-white rounded-md hover:bg-white hover:text-orange-500 ease-in-out transition-all duration-300"
                 >
