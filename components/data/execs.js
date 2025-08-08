@@ -50,6 +50,12 @@ const execs = [
         position: 'Event Coordinator',
     },
     {
+        name: 'Shriya Kumar',
+        imageURL: 'shriya',
+        linkedinURL: 'https://www.linkedin.com/in/shriya-s-kumar/',
+        position: 'Event Coordinator',
+    },
+    {
         name: 'Arianne Masinading',
         imageURL: 'arianne',
         linkedinURL: 'https://www.linkedin.com/in/ari-masinading-1020b7289/',
