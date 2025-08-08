@@ -50,21 +50,9 @@ const execs = [
         position: 'Event Coordinator',
     },
     {
-        name: 'Dylan Aranha',
-        imageURL: 'dylan',
-        linkedinURL: 'https://www.linkedin.com/in/dylana00/',
-        position: 'Event Coordinator',
-    },
-    {
         name: 'Arianne Masinading',
         imageURL: 'arianne',
         linkedinURL: 'https://www.linkedin.com/in/ari-masinading-1020b7289/',
-        position: 'Content Creator',
-    },
-    {
-        name: 'Isaac Tan',
-        imageURL: 'isaac',
-        linkedinURL: 'https://www.linkedin.com/in/isaac-tan-20812823a/',
         position: 'Content Creator',
     },
     {
@@ -80,12 +68,6 @@ const execs = [
         position: 'General Executive',
     },
     {
-        name: 'Samuel Meads',
-        imageURL: 'samuel',
-        linkedinURL: 'https://www.linkedin.com/in/samuel-meads/',
-        position: 'General Executive',
-    },
-    {
         name: 'Avantika Sharma',
         imageURL: 'avantika',
         linkedinURL: 'https://www.linkedin.com/in/avantika-sharma-096a49320/',
@@ -95,12 +77,6 @@ const execs = [
         name: 'Kiesya Liew',
         imageURL: 'kiesya',
         linkedinURL: 'https://www.linkedin.com/in/kiesya88/',
-        position: 'General Executive',
-    },
-    {
-        name: 'Ben Mitchell',
-        imageURL: 'ben',
-        linkedinURL: 'https://www.linkedin.com/in/benji-mitchell/',
         position: 'General Executive',
     },
 ]
