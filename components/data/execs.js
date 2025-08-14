@@ -85,6 +85,12 @@ const execs = [
         linkedinURL: 'https://www.linkedin.com/in/kiesya88/',
         position: 'General Executive',
     },
+    {
+        name: 'Jade',
+        imageURL: 'jade',
+        linkedinURL: 'https://www.linkedin.com/in/jade-m-26040b267/',
+        position: 'General Executive',
+    },
 ]
 
 export default execs
