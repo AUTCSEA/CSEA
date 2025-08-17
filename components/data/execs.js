@@ -1,4 +1,5 @@
-// 18 total
+// Avoid typos
+const GeneralExecutive = 'General Executive'
 
 const execs = [
     {
@@ -65,31 +66,43 @@ const execs = [
         name: 'Nicolas Ferreira',
         imageURL: 'nicolas',
         linkedinURL: 'https://www.linkedin.com/in/nicolas-limberger-ferreira-9b8405209/',
-        position: 'General Executive',
+        position: GeneralExecutive,
     },
     {
         name: 'Noor Swadi',
         imageURL: 'noor',
         linkedinURL: 'https://www.linkedin.com/in/noor-swadi-471062300/',
-        position: 'General Executive',
+        position: GeneralExecutive,
     },
     {
         name: 'Avantika Sharma',
         imageURL: 'avantika',
         linkedinURL: 'https://www.linkedin.com/in/avantika-sharma-096a49320/',
-        position: 'General Executive',
+        position: GeneralExecutive,
     },
     {
         name: 'Kiesya Liew',
         imageURL: 'kiesya',
         linkedinURL: 'https://www.linkedin.com/in/kiesya88/',
-        position: 'General Executive',
+        position: GeneralExecutive,
+    },
+    {
+        name: 'Sam Andreev',
+        imageURL: 'sam',
+        linkedinURL: 'https://www.linkedin.com/in/sam-andreev-7012b3256/',
+        position: GeneralExecutive,
     },
     {
         name: 'Jade',
         imageURL: 'jade',
         linkedinURL: 'https://www.linkedin.com/in/jade-m-26040b267/',
-        position: 'General Executive',
+        position: GeneralExecutive,
+    },
+    {
+        name: 'Jolene Bui',
+        imageURL: 'jolene',
+        linkedinURL: 'https://www.linkedin.com/in/jolene-bui-849316302/',
+        position: GeneralExecutive,
     },
 ]
 
